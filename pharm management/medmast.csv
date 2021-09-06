@@ -1,0 +1,3 @@
+med id,med name,manufacturer,batch no,rack no,qty,man date,exp date,type  of drug,salt,price
+1,crocin,glaxo,cr01,12,200,21-12-2020,21-12-2021,otc,paracetamol,20
+2,augmentin,cipla,aug003,9,124,15-08-2021,14-11-2023,pr,amoxicilin,500
