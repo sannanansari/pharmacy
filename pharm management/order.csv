@@ -1,5 +1,0 @@
-order id,cust id,prod id,prescription,date,qty,amount
-1,1,1,test,30-08-2021,1,100
-2,2,2,corosin,2021-09-05,1,20
-5,5,5,augmentin,2021-09-06,1,20
-6,6,6,augmentin,2021-09-06,1,20
