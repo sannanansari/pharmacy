@@ -1,0 +1,4 @@
+Unnamed: 0,med id,med name,manufacturer,batch no,rack no,qty,man date,exp date,type  of drug,salt,price
+0,1,crocin,glaxo,cr01,12,196,21-12-2020,12-21-2021,otc,paracetamol,200
+1,2,augmentin,cipla,aug003,9,100,15-08-2021,11-14-2023,pr,amoxicilin,500
+2,3,Alendronate,Fosamax,Al001,10,0,11-08-2021,09-21-2021,al,alendron,400

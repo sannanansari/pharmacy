@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <title>Pharm Management</title>  
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+table,td,tr,th{
+    text-align: center;
+    border: 1px solid grey; 
+}
+</style>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="/">Dashboard</a>
+
+  <ul class="navbar-nav">
+  <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="GetCustData" id="navbardrop" data-toggle="dropdown">
+        Tables
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="/GetCustData">All Customer</a>
+        <a class="dropdown-item" href="/GetMedData">Medicine Master Table</a>
+        <a class="dropdown-item" href="/GetSalesData">sales Table</a>
+        <a class="dropdown-item" href="/GetOrderData">Order</a>
+        <a class="dropdown-item" href="/GetPrescriptionData">Prescription</a>
+        <a class="dropdown-item" href="/GetSplcustomerData">Special Customer</a>
+    </div>
+    </li>  
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Main Menu
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="/customer_details">Customer Details</a>
+        <a class="dropdown-item" href="/reports">Reports</a>
+        
+      </div>
+    </li>  
+    <!--
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Customer details
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="">walking customer</a>
+        <a class="dropdown-item" href="/GetCustData">special customer for home delivery
+</a>
+      </div>
+    </li>     
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Order
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="/addOrder">Order Medicine</a>
+        <a class="dropdown-item" href="/GetOrderData">All Order</a>
+    </li>    
+     </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Reports
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Montly Sales</a>
+        <a class="dropdown-item" href="/plot">Graph</a>
+    </div>-->
+    </li>  
+    <a class="nav-link" href="/logout">Logout</a>
+  </ul>
+      
+</nav>
+<br>
+          {% block content %}{% endblock %}
+
+
+
+
+  
+</body>
+  </html>

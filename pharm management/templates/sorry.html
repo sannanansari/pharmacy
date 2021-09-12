@@ -1,0 +1,10 @@
+{% extends "customer.html" %}
+{% block content %}
+
+{{data}}
+<br>Following are suggestions:
+<br>{%for i in sendlst%}
+    <h3>{{i}}</h3>
+    {% endfor %}
+{% endblock %}
+
