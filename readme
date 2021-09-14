@@ -1,1 +1,26 @@
 ok
+{% extends "customer.html" %}
+{% block content %}
+
+<form action='/secondOrder' method='POST'
+  style="padding:1rem;margin-right:15rem;margin-left:20rem;border:1px solid silver">
+  <h3>Order Medicine</h3>
+  <label>Select Phone number</label><br>
+  <input list="cname" class="form-select" name="cname" aria-label="Default select example" required>
+  <datalist id="cname">
+    {% for i in range(leng) %}
+    <option value={{sendlst[i]}}>{{sendlst[i]}}</option>
+    {% endfor %}
+  </datalist><br>
+
+  <label>Medicine</label>
+  <input type='text' class="form-control" style="width:50%" name='name' required>
+  <label>Doctor</label>
+  <input type='text' class="form-control" style="width:50%" name='Doctor' required>
+  <label>Quantity</label>
+  <input type='tel' class="form-control" style="width:50%" name='quantity' required>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+{% endblock %}
