@@ -24,3 +24,6 @@ ok
 </form>
 
 {% endblock %}
+
+
+*int(quantity)
